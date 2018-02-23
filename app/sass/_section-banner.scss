@@ -55,5 +55,26 @@
 .banner-items--full {
 	@include col();
 	@include size(12);
-
+	img {
+		border-radius: 2px;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.banner-items--full-margin {
+	margin-top: 30px;
+	position: relative;
+	.slider-top__content {
+		right: 20%;
+		left: auto;
+		justify-content: center;
+		text-align: center;
+		.slider-top__title {
+			margin-top: 20px;
+		}
+		@media screen and (max-width: 500px) {
+			top: 50%;
+		}
+	}
 }

@@ -205,6 +205,35 @@
 			},
 		});
 
+	 	////////slider categoru///////
+	 	var swipercategoru = new Swiper('.swipercategoru-container', {
+			slidesPerView: 10,
+			breakpoints: {
+				993: {
+					slidesPerView: 6
+				},
+				769: {
+					slidesPerView: 4
+				},
+				577: {
+					slidesPerView:3
+				}
+			},
+			spaceBetween: 0,
+			slidesPerGroup: 1,
+			loop: true,
+			loopFillGroupWithBlank: true,
+			pagination: {
+			
+			clickable: true,
+			},
+			navigation: {
+			nextEl: '.swiper-button-next-categoru',
+			prevEl: '.swiper-button-prev-categoru',
+			},
+		});
+		///////////////
+
 		/////////////slider pgwslideshow/////
 		$('.pgwSlideshow').pgwSlideshow({
 			autoSlide: true,
@@ -219,6 +248,7 @@
             items:1,
             nav:true,
             loop:true,
+            
         });
         $('#slider-2').owlCarousel({
             items:1,
@@ -227,11 +257,35 @@
         });
         $('#brandSlider').owlCarousel({
             items:6,
-            nav:true,
-            lazyLoad:true,
-            loop:true,
+           nav:true,
+           lazyLoad:true,
+           loop:true,
+           responsiveClass:true,
+                responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                440:{
+                    items:2,
+                },
+                640:{
+                    items:3,
+                },
+                940:{
+                    items:4,
+                },
+                1024:{
+                    items:5,
+                },
+                1300:{
+                    items:6,
+                    nav:true,
+                }
+            }
         }); 
-    
+   
+            
 
 		/////////////slider pgwslideshow/////
 	});// end ready

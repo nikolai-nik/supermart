@@ -62,8 +62,12 @@
 	padding-left:0;
 }
 
-.navbar-right__link{
+.navbar-right__link {
 	border-right: 1px solid #4f90d8;
+	i {
+		color: #fff;
+	}
+	
 }
 
 .navbar__span {
@@ -301,7 +305,7 @@
 	font-size: 15px;
 	padding:5px 0;
 	margin: 0 5px;
-
+	color: #fff;
 }
 ::-webkit-scrollbar {
 	background: transparent;

@@ -10,6 +10,9 @@
 	justify-content: center;
 	margin-bottom: 10px;
 }
+.card__rating--left {
+	justify-content: flex-start;
+}
 .rating-list {
 	display: flex;
 
@@ -23,4 +26,53 @@
 }
 .rating-list__item.active{
 	color: $color-yellow;
+}
+.breadgrumbs--wrap {
+	width: 100%;
+	@include row-flex();
+}
+.breadgrumbs {
+	@include col();
+	@include size(12);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	margin-bottom: 20px;
+}
+.breadgrumbs-list {
+	display: flex;
+}
+.breadgrumbs__title {
+	font-size: 20px;
+	line-height: 22px;
+	color: #222;
+	text-transform: uppercase;
+	font-family: 'ralewaybold';
+}
+.breadgrumbs__items {
+	margin: 0 10px;
+	position: relative;
+	&:after {
+		position: absolute;
+		content: '/';
+		right: -15px;
+
+	}
+	&:last-child:after {
+		content: '';
+	}
+}
+.breadgrumbs__items:hover:not(:last-child) .breadgrumbs__link{
+	color: $color-yellow;
+}
+
+.breadgrumbs__link {
+	color: #222;
+	font-family: 'ralewayregular';
+	text-decoration: none;
+	transition: color .3s ease;
+	text-transform: uppercase;
+	
+	
 }

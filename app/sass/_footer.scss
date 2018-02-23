@@ -453,10 +453,10 @@ h3 {
 	width: 85%;
 	margin: 0 auto;
 
-	@include sm-block(){
+	@include sm-block()
 		text-align: center;
-	}
 }
+
 
 .copyright__content {
 	font-size: 12px;
