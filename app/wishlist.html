@@ -12,6 +12,8 @@
       <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+
     <header class="header">
         <div class="header-wrap header-wrap--top">
             <div class="container top-panel">
@@ -97,7 +99,7 @@
                     <div class="navbar-menu navbar-menu-money">
                         <div id="currensy" class="currensy">
                             <i class="fa fa-sort-desc currensy__icon " aria-hidden="true"></i>
-                            <p class="currensy-tag">usd</p>
+                            <p class="currensy-tag" name=select>usd</p>
                             <ul id="currensy-list" class="currensy-list">
                                 <li class="option">usd</li>
                                 <li class="option">eur</li>
@@ -129,7 +131,7 @@
                         <form class="search-form">
                             <input id="search-form" type="text" placeholder="search..." class="search-form__input">
                             <select name="year" class="search-form__select">
-                                <option value="2000">all categories</option>
+                                <option value="2000"><span><i class="flag flag-gb"></i></span>all categories</option>
                                 <option value="2001">mobile</option>
                                 <option value="2001">sports</option>
                                 <option value="2001">foods</option>
@@ -285,252 +287,79 @@
     </header>
 
     <main class="main">
-        <section class="section section-title">
-            <div class="container section-title--wrap">
-                <h1 class="section-title__title">ABOUT US</h1>
 
-                <div class="section-title__title--wrap-menu">
-                  <ul class="section-title__list">
-                    <li class="section-title__item">
-                        <a href="#" class="section-title__link">HOME/</a>
+      <section class="section wishlist container">
+
+        <div class= "wishlist--wrap">
+          <h1 class="wishlist__title">WISHLIST</h1>
+                  <ul class="wishlist__list">
+                    <li class="wishlist__item">
+                      <div class="wishlist__title--wrap--left">
+                        <h2 class="wishlist__title--h2">PRODUCT</h2>
+                        <h2 class="wishlist__title--h2">PRICE</h2>
+                      </div>
+                      <div class="wishlist__title--wrap--right">
+                        <h2 class="wishlist__title--h2">STOCK STATUS</h2>
+                      </div>
                     </li>
-                    <li class="section-title__item">
-                        <a href="#" class="section-title__link">ABOUT US</a>
+
+                    <li class="wishlist__item">
+                      <div class="wishlist__product">
+                        <div class="wishlist__img--wrap">
+                          <img src="img/wish_1.jpeg" alt="" class="wishlist--img">
+                          <span class="wishlist--figcaption">Microsoft Lumia U169</span>
+                        </div>
+                        <span class="wishlist--price">$95.00</span>
+                      </div>
+                      <div class="wishlist__status">
+                        <span class="wishlist--stock">IN STOCK</span>
+                        <a href="#" class="btn--cart--btn">ADD TO CART</a>
+                        <a href="#" class="btn--prim">
+                          <span class="close"></span>
+                        </a>
+                      </div>
+
                     </li>
-                  </ul>
+
+                    <li class="wishlist__item">
+                      <div class="wishlist__product">
+                        <div class="wishlist__img--wrap">
+                          <img src="img/wish_2.jpeg" alt="" class="wishlist--img">
+                          <span class="wishlist--figcaption">Audio Splitter Cable</span>
+                        </div>
+                        <span class="wishlist--price">$34.00</span>
+                      </div>
+                      <div class="wishlist__status">
+                        <span class="wishlist--stock--none">IN STOCK</span>
+                        <a href="#" class="btn--cart--btn none">ADD TO CART</a>
+                        <a href="#" class="btn--prim">
+                          <span class="close"></span>
+                        </a>
+                      </div>
+                    </li>
+
+                    <li class="wishlist__item">
+                      <div class="wishlist__product">
+                        <div class="wishlist__img--wrap">
+                          <img src="img/wish_3.jpeg" alt="" class="wishlist--img">
+                          <span class="wishlist--figcaption">Zexon Brands watch</span>
+                        </div>
+                        <span class="wishlist--price">$87.00</span>
+                      </div>
+                      <div class="wishlist__status">
+                        <span class="wishlist--stock">IN STOCK</span>
+                        <a href="#" class="btn--cart--btn">ADD TO CART</a>
+                        <a href="#" class="btn--prim">
+                          <span class="close"></span>
+                        </a>
+                      </div>
+                    </li>
                 </div>
-            </div>
-        </section>
+      </section>
 
-<!-- about -->
-        <section class="section-about container">
-          <!-- <div class="container"> -->
-            <div class="about-box">
-              <!-- <div class="about-box__img"> -->
-                <div class="about-box__img--img">
-                  <img src="img/About-Us.png" alt="" class="about-box__img">
-                </div>
+    </main>
 
-              <div class="about-info">
-                <h2 class="about-info__title">
-                  Hello, We are Supermart Established
-                  <span>2006 - Newyork</span>
-                </h2>
-                <p class="about-info__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Fugiat officia aliquid minus laudantium est animi ullam, nihil nulla delectus.
-                </p>
-                <p class="about-info__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Repudiandae cupiditate nisi dolor et molestias autem voluptatibus assumenda quibusdam illo, recusandae labore id aliquam.
-                  Ab illo optio, quos asperiores, praesentium dolorum.</p>
-                <a href="#" class="about-link">CONTACT US</a>
-              </div>
-
-          </div>
-        </section>
-<!-- .//about -->
-
-<!-- works -->
-        <section class="section works">
-            <ul class="works__list container">
-                <li class="works__item">
-                    <div class="circle">
-                      <img src="img/mob.svg" alt="">
-                    </div>
-                    <h3 class="works__title">STRATEGY & MARCETING</h3>
-                    <p class="works__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Ipsam impedit nobis cum sit facilis porro quae non eaque adipisci perferendis,
-                      aut quam id incidunt accusamus expedita veniam quidem tenetur velit.</p>
-                    </li>
-                <li class="works__item">
-                    <div class="circle">
-                      <img src="img/clock.svg" alt="">
-                    </div>
-                    <h3 class="works__title">STRATEGY & MARCETING</h3>
-                    <p class="works__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Ipsam impedit nobis cum sit facilis porro quae non eaque adipisci perferendis,
-                      aut quam id incidunt accusamus expedita veniam quidem tenetur velit.</p>
-                    </li>
-                <li class="works__item">
-                    <div class="circle">
-                      <img src="img/victory.svg" alt="">
-                    </div>
-                    <h3 class="works__title">STRATEGY & MARCETING</h3>
-                    <p class="works__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Ipsam impedit nobis cum sit facilis porro quae non eaque adipisci perferendis,
-                      aut quam id incidunt accusamus expedita veniam quidem tenetur velit.</p>
-                </li>
-            </ul>
-        </section>
-  <!-- ./works -->
-
-<!-- facts -->
-        <section class="section facts">
-          <ul class="facts__list container">
-            <li class="facts__item">
-              <span class="facts-count">142</span>
-              <span class="facts-descr">Total Employees</span>
-            </li>
-            <li class="facts__item">
-              <span class="facts-count">99</span>
-              <span class="facts-descr">% Satisfaction</span>
-            </li>
-            <li class="facts__item">
-              <span class="facts-count">4214</span>
-              <span class="facts-descr">Cups of Cofee</span>
-            </li>
-            <li class="facts__item">
-              <span class="facts-count">4.7</span>
-              <span class="facts-descr">Buyers Rating</span>
-            </li>
-          </ul>
-        </section>
-
-        <!-- team -->
-        <section class="section team">
-          <div class="team__title--wrap container">
-            <h2 class="team__title">MEET THE TEAM</h2>
-            <p class="team__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <ul class="team__list container">
-            <li class="team-item">
-               <div class="team__img">
-                 <img src="img/img2_2.jpeg" alt="" class="team__img--img">
-               </div>
-               <div class="team__img--descr">
-                 <span class="team__person">GEORGE GREY</span>
-                 <span class="team__position">Head of Investment</span>
-                 <address class="team__social">
-                   <ul class="team__social-list">
-                     <li class="team__social-item">
-                       <a href="#" class="team__social-link">
-                         <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                       </a>
-                     </li>
-                     <li class="team__social-item">
-                       <a href="#" class="team__social-link">
-                         <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                       </a>
-                     </li>
-                     <li class="team__social-item">
-                       <a href="#" class="team__social-link">
-                         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                       </a>
-                     </li>
-                     <li class="team__social-item">
-                       <a href="#" class="team__social-link">
-                         <i class="fa fa-google-plus-square" aria-hidden="true"></i>
-                       </a>
-                     </li>
-                   </ul>
-               </address>
-             </div>
-             </li>
-             <li class="team-item">
-               <div class="team__img">
-                 <img src="img/img3_3.jpeg" alt="" class="team__img--img">
-               </div>
-               <div class="team__img--descr">
-                 <span class="team__person">SCOOTER LIBBY</span>
-                 <span class="team__position">Creative Director</span>
-                 <address class="team__social">
-                   <ul class="team__social-list">
-                     <li class="team__social-item">
-                       <a href="#" class="team__social-link">
-                         <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                       </a>
-                     </li>
-                     <li class="team__social-item">
-                       <a href="#" class="team__social-link">
-                         <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                       </a>
-                     </li>
-                     <li class="team__social-item">
-                       <a href="#" class="team__social-link">
-                         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                       </a>
-                     </li>
-                     <li class="team__social-item">
-                       <a href="#" class="team__social-link">
-                         <i class="fa fa-google-plus-square" aria-hidden="true"></i>
-                       </a>
-                     </li>
-                   </ul>
-               </address>
-             </div>
-             </li>
-             <li class="team-item">
-               <div class="team__img">
-                 <img src="img/img4_4.jpeg" alt="" class="team__img--img">
-               </div>
-               <div class="team__img--descr">
-                 <span class="team__person">HANNA LUCY</span>
-                 <span class="team__position">Marketing Director</span>
-                 <address class="team__social">
-                   <ul class="team__social-list">
-                     <li class="team__social-item">
-                       <a href="#" class="team__social-link">
-                         <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                       </a>
-                     </li>
-                     <li class="team__social-item">
-                       <a href="#" class="team__social-link">
-                         <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                       </a>
-                     </li>
-                     <li class="team__social-item">
-                       <a href="#" class="team__social-link">
-                         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                       </a>
-                     </li>
-                     <li class="team__social-item">
-                       <a href="#" class="team__social-link">
-                         <i class="fa fa-google-plus-square" aria-hidden="true"></i>
-                       </a>
-                     </li>
-                   </ul>
-               </address>
-             </div>
-             </li>
-             <li class="team-item">
-               <div class="team__img">
-                 <img src="img/img1_1.jpeg" alt="" class="team__img--img">
-               </div>
-               <div class="team__img--descr">
-                 <span class="team__person">EVEN CHESLER</span>
-                 <span class="team__position">Sales Director</span>
-                 <address class="team__social">
-                   <ul class="team__social-list">
-                     <li class="team__social-item">
-                       <a href="#" class="team__social-link">
-                         <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                       </a>
-                     </li>
-                     <li class="team__social-item">
-                       <a href="#" class="team__social-link">
-                         <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                       </a>
-                     </li>
-                     <li class="team__social-item">
-                       <a href="#" class="team__social-link">
-                         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                       </a>
-                     </li>
-                     <li class="team__social-item">
-                       <a href="#" class="team__social-link">
-                         <i class="fa fa-google-plus-square" aria-hidden="true"></i>
-                       </a>
-                     </li>
-                   </ul>
-               </address>
-             </div>
-             </li>
-          </ul>
-        </section>
-<!--.//team  -->
-
-</main>
-
-<footer class="main-footer">
+  <footer class="main-footer">
            <!-- four elements features-->
       <div class="wrapper">
           <div class="features__container container">
@@ -624,7 +453,7 @@
   </div>
     <!-- ./section of subscriber -->
     <!-- content of footer -->
-<div class="footer__content-wrapper">
+  <div class="footer__content-wrapper">
   <div class="footer__content-container container">
     <ul class="footer__content-list">
       <li class="footer__content-item">
@@ -746,19 +575,19 @@
       </li>
     </ul>
   </div>
-</div>
-</div>
+  </div>
+  </div>
   <!-- ./content of footer -->
     <!-- bottom copyright -->
-<div class="copyright-wrap">
+  <div class="copyright-wrap">
   <div class="copyright">
     <span class="copyright__content">&copy; Copyright - Supermart Template by DesignFalls</span>
   </div>
-</div>
+  </div>
   <!-- ./bottom copyright -->
 </footer>
 
-</main>
+
       <script src="js/libs.min.js"></script>
       <script src="js/main-style.js"></script>
       <script src="js/jquery-3.2.1.min.js"></script>
