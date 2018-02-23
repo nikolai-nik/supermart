@@ -284,6 +284,9 @@
 .social-link {
 	color: #000;
 	text-decoration: none;
+	&:hover {
+		color: $color-yellow;
+	}
 }
 
 .soc-ico-wrap {
@@ -380,7 +383,7 @@ h3 {
 }
 
 .inner-list__link:hover {
-	color: #000;
+	color: $color-yellow;
 }
 
 .footer__address {

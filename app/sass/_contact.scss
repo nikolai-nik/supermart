@@ -81,7 +81,7 @@
 	font-weight: 600;
 	text-transform: uppercase;
 	&:hover{
-		color: #555;
+		color: $color-yellow;
 	}
 }
 
@@ -144,6 +144,12 @@
 	font-weight: 700;
 	padding: 18px 25px;
 	font-size: 14px;
+	&:hover {
+		background-color: #fac200;
+	}
+	&:active {
+		background-color: #004159;
+	}
 }
 
 #map {
