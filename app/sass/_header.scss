@@ -223,7 +223,7 @@
 	line-height: 20px;
 	font-family: 'robotomedium';
 	display: flex;
-	justify-content: left;
+	
 	align-items: center;
 	background: inherit;
 	order: 2;
@@ -253,7 +253,6 @@
 
 .language-menu__item.active {
 	order: 1;
-	pointer-events: none;
 	color: #fff;
 	background: #3b83d4;
 

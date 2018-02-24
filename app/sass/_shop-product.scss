@@ -2,19 +2,7 @@
 	display: flex;
 	flex-direction: column;
 }
-.pagination-stock-product {
-	justify-content: left;
-}
 
-.container-pagination-list {
-	@include row-flex();
-}
-.pagination-list {
-	@include col();
-	@include size(12);
-}
-.section-stock-product {
-}
 .cart-full-product {
 
 
@@ -190,7 +178,6 @@
 		height: 0;
 		width: 0;
 		position: absolute;
-		pointer-events: none;
 	}
 	&:after {
 		border-color: rgba(255, 255, 255, 0);
@@ -229,6 +216,7 @@
 	width: 100%;
 	position: relative;
 	margin-top: 50px;
+	margin-bottom: 100px;
 
 	@media screen and(max-width: 400px) {
 		margin-top: 100px;

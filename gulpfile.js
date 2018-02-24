@@ -1,3 +1,4 @@
+
 var gulp       = require('gulp'), // Подключаем Gulp
     sass         = require('gulp-sass'), //Подключаем Sass пакет,
     browserSync  = require('browser-sync'), // Подключаем Browser Sync
@@ -30,7 +31,6 @@ gulp.task('sass', function(){ // Создаем таск Sass
                 }
             })
         )
-        
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(gcmq())
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
@@ -51,10 +51,9 @@ gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
         'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
         'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js', // Берем Magnific Popup
-        'app/libs/swiper/dist/js/swiper.min.js',//slider///
-        'app/libs/PgwSlideshow/pgwslideshow.min.js',////slider slideshow//
-        'app/libs/owl-slider/owl.carousel.js'////owl-slider//      
-        
+        'app/libs/swiper/dist/js/swiper.min.js',
+         'app/libs/PgwSlideshow/pgwslideshow.min.js',////slider slideshow//
+        'app/libs/owl-slider/owl.carousel.js'////owl-slider//   
         ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
@@ -116,6 +115,7 @@ gulp.task('build', ['clean', 'img', 'sass', 'css-main', 'scripts'], function() {
         'app/css/libs.min.css',
         'app/css/font.css',
         'app/css/font-awesome.css',
+        'app/css/lineicons.css',
         ])
     .pipe(gulp.dest('dist/css'))
 
@@ -170,8 +170,3 @@ gulp.task('clear', function (callback) {
 
 
 gulp.task('default', ['watch']);
-
-
-
-
-

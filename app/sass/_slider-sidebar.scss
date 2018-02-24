@@ -4,6 +4,7 @@
 	@include row-flex();
 	@include col();
 	@include size(3);
+	flex-direction: column;
 }
 
 
@@ -23,7 +24,7 @@
 .slider-wrap {
 	
 	width: 100%;
-
+	margin-bottom: 30px;
 	border: 1px solid #e5e5e5;
 	border-radius: 1px;
 }
@@ -348,4 +349,109 @@
     left: 10px;
     position: absolute;
     text-indent: 0;
+}
+.slider-wrap {
+	width: 100%; 
+}
+
+// timer-----------------------------------------------------------------
+.timer-wrap {
+	background: #f6f6f6;
+	border-top: 1px solid #e5e5e5;
+	display: flex;
+}
+
+.timer__item {
+	flex: 1 0 25%;
+	flex-wrap: nowrap;
+	border-right: 1px solid #e5e5e5;
+	padding: 15px 15px 14px 15px;
+	&:last-child {
+		border-right: none;
+	}
+}
+
+.timer__data,
+.timer__data--descr {
+	display: block;
+	text-align: center;
+	font-family: 'robotoregular';
+}
+
+.timer__data {
+	color: #222;
+}
+
+.timer__data--descr {
+	color: #999;
+}
+
+// card-----------------------------------------------------------------=
+.card {
+	padding-top: 20px;
+}
+
+.card__name,
+.card__prise {
+	display: block;
+	text-align: center;
+	color: #444;
+}
+
+.card__name{
+	font-size: 14px;
+	font-family: 'robotoregular';
+}
+
+.card__prise {
+	font-size: 13px;
+	font-family: 'robotomedium';
+	&:before {
+		content: "";
+		top: 0;
+		left: 0;
+		margin-right: 3px;
+	}
+}
+
+// blog scss -вместо серого бекграунда.
+
+.headline-wrap {
+	background: url(../img/plyushevyj_medved_serdtse_den_svyatogo_valentina_lyubov_119405_1920x1080.jpg)center center no-repeat;
+}
+// + responsiv to blog scss 
+
+
+@media screen and (max-width: 769px) {
+	.content-wrap {
+		@include row-flex();
+	}
+
+	.content,
+	.aside {
+		@include col();
+		@include size(6);
+		@include size-md(12);
+	}
+
+	.aside {
+		order:-1;
+		margin-bottom: 40px;
+	}
+}
+.product-banner-sidebar {
+	width: 100%;
+}
+.banner-items-sidebar {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	.batton--wrap {
+		margin-bottom: 20px;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 }

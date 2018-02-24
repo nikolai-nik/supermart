@@ -250,7 +250,7 @@
             loop:true,
             
         });
-        $('#slider-2').owlCarousel({
+        $("#slider-2, #slider-4").owlCarousel({
             items:1,
             lazyLoad:true,
             loop:true,
@@ -284,7 +284,7 @@
                 }
             }
         }); 
-   
+   		
             
 
 		/////////////slider pgwslideshow/////
