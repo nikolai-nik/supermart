@@ -312,13 +312,18 @@
 			color: $color-white;
 			display: flex;
 			align-items: center;
-			justify-content: center;
 		}
 		.product-items__sale {
 		    background: red;
+		   position: absolute;
+			top: 0;
+			right: 10px;
 		}
 		.product-items__new {
 			background: $color-yellow;
+			position: absolute;
+			top: 0;
+			left: 10px;
 		}
 	}
 }
