@@ -116,6 +116,7 @@ gulp.task('build', ['clean', 'img', 'sass', 'css-main', 'scripts'], function() {
         'app/css/font.css',
         'app/css/font-awesome.css',
         'app/css/lineicons.css',
+        'app/css/normalize.css',
         ])
     .pipe(gulp.dest('dist/css'))
 
