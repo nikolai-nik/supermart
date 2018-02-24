@@ -235,6 +235,7 @@
 		///////////////
 
 		/////////////slider pgwslideshow/////
+		
 		$('.pgwSlideshow').pgwSlideshow({
 			autoSlide: true,
 			maxHeight: 800,

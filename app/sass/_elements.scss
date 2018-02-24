@@ -39,9 +39,14 @@
 	align-items: center;
 	padding: 20px 0;
 	margin-bottom: 20px;
+	@include sm-block(){
+		flex-direction: column;
+	}
 }
 .breadgrumbs-list {
 	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
 }
 .breadgrumbs__title {
 	font-size: 20px;
@@ -49,10 +54,14 @@
 	color: #222;
 	text-transform: uppercase;
 	font-family: 'ralewaybold';
+	@include sm-block(){
+		margin-bottom:20px;
+	}
 }
 .breadgrumbs__items {
 	margin: 0 10px;
 	position: relative;
+
 	&:after {
 		position: absolute;
 		content: '/';
@@ -73,6 +82,6 @@
 	text-decoration: none;
 	transition: color .3s ease;
 	text-transform: uppercase;
-	
+	font-size: 14px;
 	
 }

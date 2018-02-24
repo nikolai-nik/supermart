@@ -1168,6 +1168,13 @@ batton.btn--banner {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: wrap;
+      -ms-flex-flow: wrap;
+          flex-flow: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .breadgrumbs__title {
@@ -1205,6 +1212,7 @@ batton.btn--banner {
   -o-transition: color .3s ease;
   transition: color .3s ease;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 /*!
@@ -3112,6 +3120,7 @@ h3 {
   font-family: 'robotoregular';
   font-weight: 400;
   line-height: 22px;
+  text-transform: capitalize;
 }
 
 .inner-list__link:hover {
@@ -3781,8 +3790,6 @@ h3 {
 
 .main__header-item:first-child {
   margin-right: auto;
-  width: 100%;
-  padding-bottom: 15px;
 }
 
 .main__header-item:first-child:after {
@@ -4984,9 +4991,10 @@ h3 {
   width: calc(50% - 10px);
 }
 
-#main__content-field {
+#main__content-field-right {
   border: 2px solid rgba(0, 0, 0, 0.1);
   height: 80px;
+  width: 100%;
 }
 
 .popup-form {
@@ -6979,6 +6987,7 @@ h3 {
   font-family: 'robotoregular';
   font-weight: 400;
   line-height: 22px;
+  text-transform: capitalize;
 }
 
 .inner-list__link:hover {
@@ -7648,8 +7657,6 @@ h3 {
 
 .main__header-item:first-child {
   margin-right: auto;
-  width: 100%;
-  padding-bottom: 15px;
 }
 
 .main__header-item:first-child:after {
@@ -12617,6 +12624,18 @@ body img {
     width: calc(50% - 30px);
   }
 
+  .breadgrumbs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .breadgrumbs__title {
+    margin-bottom: 20px;
+  }
+
   .category-menu-list {
     -webkit-column-count: 1;
        -moz-column-count: 1;
@@ -12663,6 +12682,11 @@ body img {
 
   .main__content-block:last-child {
     padding-top: 25px;
+  }
+
+  .main__header-item:first-child {
+    width: 100%;
+    padding-bottom: 15px;
   }
 
   .section-title--wrap {
@@ -12773,6 +12797,11 @@ body img {
 
   .main__content-block:last-child {
     padding-top: 25px;
+  }
+
+  .main__header-item:first-child {
+    width: 100%;
+    padding-bottom: 15px;
   }
 
   .wishlist__item {
