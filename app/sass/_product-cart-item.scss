@@ -149,6 +149,9 @@
 		 		&:last-child {
 			        border-bottom: none;
 			    }
+			    .product-items__box {
+			    	width: 50%;
+			    }
 				.social-list{
 					position: absolute;
 					top: 50%;
@@ -156,6 +159,7 @@
 					transform: translate( -50%, -50%);
 				}
 				.caption {
+					width: 50%;
 					margin-top: 15px;
 				}
 				@media screen and(max-width: 576px) {
@@ -421,6 +425,8 @@
 	.caption__name {
 		 align-items: baseline;
 		 padding: 0 15px;
+		 max-height: 100px;
+		 overflow-y: auto;
 		.caption__link {
 			@include title-h3();
 			text-transform: capitalize;

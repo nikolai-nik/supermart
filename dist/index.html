@@ -28,10 +28,10 @@
                         </div>
                         <div class="navbar-menu">
                              <ul class="language-menu-list">
-                                <li data-lang="en" class="language-menu__item active"><i class="flag flag-gb"></i> en</li>
+                                <li data-lang="en" class="language-menu__item active"><i class="flag flag-us"></i> en</li>
                                 <li data-lang="ru" class="language-menu__item"><i class="flag flag-ru"></i> ru</li>
-                                <li data-lang="en" class="language-menu__item"><i class="flag flag-de"></i> de</li>
-                                <li data-lang="il" class="language-menu__item"><i class="flag flag-il"></i> il</li>
+                                <li data-lang="de" class="language-menu__item"><i class="flag flag-de"></i> de</li>
+                                <li data-lang="ua" class="language-menu__item"><i class="flag flag-ua"></i> ua</li>
                             </ul>
                         </div>
                     </div>
@@ -46,25 +46,14 @@
                             </a>
                         </div>
                         <div class="navbar-menu navbar-menu-money">
-                            <div id="currensy" class="currensy">
-                                <i class="fa fa-sort-desc currensy__icon " aria-hidden="true"></i>
-                                <p class="currensy-tag" >usd</p>
-                                <ul id="currensy-list" class="currensy-list">
-                                    <li class="option">usd</li>
-                                    <li class="option">eur</li>
-                                    <li class="option">gbr</li>
-                                    <li class="option">usd</li>
-                                    <li class="option">eur</li>
-                                    <li class="option">gbr</li>
-                                    <li class="option">usd</li>
-                                    <li class="option">eur</li>
-                                    <li class="option">gbr</li>
-                                    <li class="option">usd</li>
-                                    <li class="option">eur</li>
-                                    <li class="option">gbr</li>
-    
-                                </ul>
-                            </div>
+                            <ul class="money-menu-list">
+                                <li data-lang="usd" class="money-menu__item active">usd</li>
+                                <li data-lang="eur" class="money-menu__item">eur</li>
+                                <li data-lang="gbr" class="money-menu__item">gbr</li>
+                                <li data-lang="rub" class="money-menu__item">rub</li>
+                                <li data-lang="pln" class="money-menu__item">pln</li>
+                                <li data-lang="uan" class="money-menu__item">uan</li>
+                            </ul>
                         </div>
                         <batton class="btn btn-top">DOWNLOAD APP</batton>
                     </div>
@@ -243,7 +232,11 @@
                     <div class="swiper-container swiper-top">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="img/lakosta_lacoste_sumka_stil_model_20442_1920x1080.jpg" alt="krossovki">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="img/mobile/lakosta_lacoste_sumka_stil_model_20442_800x450.jpg">
+                                         <source media="(max-width: 992px)" srcset="img/tablet/lakosta_lacoste_sumka_stil_model_20442_1200x800.jpg">
+                                    <img src="img/lakosta_lacoste_sumka_stil_model_20442_1920x1080.jpg" alt="sumka">
+                                </picture>
                                 <div class="slider-top__content">
                                     <h2 class="slider-top__title">Upto 50% <span>Offer!</span></h2>
                                     <h3 class="slider-top__subtitle">For all Men’s Collections</h3>
@@ -251,7 +244,11 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/lakosta_lacoste_kollekciya_postelnoe_bele_dizayn_interer_20424_1920x1080.jpg" alt="osveshchenie">
+                                 <picture>
+                                    <source media="(max-width: 768px)" srcset="img/mobile/lakosta_lacoste_kollekciya_postelnoe_bele_dizayn_interer_20424_800x450.jpg">
+                                         <source media="(max-width: 992px)" srcset="img/tablet/lakosta_lacoste_kollekciya_postelnoe_bele_dizayn_interer_20424_1200x800.jpg">
+                                    <img src="img/lakosta_lacoste_kollekciya_postelnoe_bele_dizayn_interer_20424_1920x1080.jpg" alt="postelnoe-bele">
+                                </picture>
                                 <div class="slider-top__content">
                                     <h2 class="slider-top__title">Upto 50% <span>Offer!</span></h2>
                                     <h3 class="slider-top__subtitle">For all Men’s Collections</h3>
@@ -259,7 +256,11 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/krossovki_stilnyj_sportivnyj_chb_119528_1920x1080.jpg" alt="serdtsa">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="img/mobile/krossovki_stilnyj_sportivnyj_chb_119528_800x450.jpg">
+                                         <source media="(max-width: 992px)" srcset="img/tablet/krossovki_stilnyj_sportivnyj_chb_119528_1200x800.jpg">
+                                   <img src="img/krossovki_stilnyj_sportivnyj_chb_119528_1920x1080.jpg" alt="krossovki">
+                                </picture>
                                 <div class="slider-top__content">
                                     <h2 class="slider-top__title">Upto 50% <span>Offer!</span></h2>
                                     <h3 class="slider-top__subtitle">For all Men’s Collections</h3>
@@ -277,7 +278,11 @@
         <div class="container">
             <section class="section-banner section-banner-top ">
                     <div class="banner-items">
-                        <img src="img/lakosta_lacoste_sumka_stil_model_20442_1920x1080.jpg" alt="">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="img/mobile/sportivnyj_audi_seryj_fon_velosiped_94380_800x450.jpg">
+                            <source media="(max-width: 992px)" srcset="img/tablet/sportivnyj_audi_seryj_fon_velosiped_94380_1200x800.jpg">
+                            <img src="img/sportivnyj_audi_seryj_fon_velosiped_94380_1920x1080.jpg" alt="sportivnyj_audi_seryj_fon_velosiped">
+                        </picture>
                         <div class="slider-top__content">
                             <h2 class="slider-top__title slider-top__title--banner">Upto 50% <span>Offer!</span></h2>
                             <h3 class="slider-top__subtitle slider-top__subtitle--banner">For all Men’s Collections</h3>
@@ -285,7 +290,11 @@
                         </div>
                     </div>
                     <div class="banner-items">
-                        <img src="img/lakosta_lacoste_kollekciya_postelnoe_bele_dizayn_interer_20424_1920x1080.jpg" alt="">
+                         <picture>
+                            <source media="(max-width: 768px)" srcset="img/mobile/velosiped_seryy_metall_sport_7472_800x450.jpg">
+                            <source media="(max-width: 992px)" srcset="img/tablet/velosiped_seryy_metall_sport_7472_1200x800.jpg">
+                            <img src="img/velosiped_seryy_metall_sport_7472_1920x1080.jpg" alt="velosiped_seryy_metall_sport">
+                        </picture>
                         <div class="slider-top__content">
                             <h2 class="slider-top__title slider-top__title--banner">Upto 50% <span>Offer!</span></h2>
                             <h3 class="slider-top__subtitle slider-top__subtitle--banner">For all Men’s Collections</h3>
@@ -293,7 +302,11 @@
                         </div>
                     </div>
                      <div class="banner-items">
-                        <img src="img/sportivnyj_audi_seryj_fon_velosiped_94380_1920x1080.jpg" alt="">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="img/mobile/omega_omega_spidmester_avtomaticheskiy_hronometr_naruchnye_chasy_60326_800x450.jpg">
+                            <source media="(max-width: 992px)" srcset="img/tablet/omega_omega_spidmester_avtomaticheskiy_hronometr_naruchnye_chasy_60326_1200x800.jpg">
+                            <img src="img/omega_omega_spidmester_avtomaticheskiy_hronometr_naruchnye_chasy_60326_1920x1080.jpg" alt="naruchnye_chasy">
+                        </picture>                        
                         <div class="slider-top__content">
                             <h2 class="slider-top__title slider-top__title--banner">Upto 50% <span>Offer!</span></h2>
                             <h3 class="slider-top__subtitle slider-top__subtitle--banner">For all Men’s Collections</h3>
@@ -353,7 +366,7 @@
                             <div class="slider__inner slider-container">
                                 <p class="slider__descr slider-2">Black gold Makin' your way in the world today takes every thing you've got. Takin' a break from all your worries the some marry shop theme.</p>
                                 <figure class="slider__image slider-2">
-                                    <img src="img/chrle.png" alt="foto">
+                                    <img src="img/chrle.jpg" alt="foto">
                                      <figcaption class="slider__img-descr">
                                         <span class="slider__person-name">Chrle Benson</span>
                                         <span class="slider__position">Lead designer</span>
@@ -364,7 +377,7 @@
                             <div class="slider__inner slider-container">
                                 <p class="slider__descr">Black gold Makin' your way in the world today takes every thing you've got. Takin' a break from all your worries the some marry shop theme.</p>
                                 <figure class="slider__image slider-2">
-                                    <img src="img/chrle.png" alt="foto">
+                                    <img src="img/chrle.jpg" alt="foto">
                                      <figcaption class="slider__img-descr">
                                         <span class="slider__person-name">Dylan McRay</span>
                                         <span class="slider__position">Lead designer</span>
@@ -376,7 +389,7 @@
                             <div class="slider__inner slider-container">
                                 <p class="slider__descr">Black gold Makin' your way in the world today takes every thing you've got. Takin' a break from all your worries the some marry shop theme.</p>
                                 <figure class="slider__image slider-2">
-                                    <img src="img/chrle.png" alt="foto">
+                                    <img src="img/chrle.jpg" alt="foto">
                                      <figcaption class="slider__img-descr">
                                         <span class="slider__person-name">Dylan McRay</span>
                                         <span class="slider__position">Lead designer</span>
@@ -459,8 +472,8 @@
                                           <span class="product-items__new">new</span>
                                            <span class="product-items__sale">sale</span>
                                         </div>
-                                        <img class="product-items__img first" src="img/img-cart/product-1.png" alt="foto">
-                                        <img class="product-items__img second" src="img/img-cart/product-2.png" alt="foto">
+                                        <img  class="product-items__img first" src="img/img-cart/product-5.jpg" alt="sportivnyj_audi_seryj_fon_velosiped">
+                                        <img class="product-items__img second" src="img/img-cart/product-6.jpg" alt="sportivnyj_audi_seryj_fon_velosiped">
                                         <div class="social-box">
                                             <ul class="social-list">
                                                 <li class="social__item">
@@ -569,8 +582,8 @@
                                         <div class="product-items__header">
                                           <span class="product-items__new">new</span>
                                         </div>
-                                        <img class="product-items__img first" src="img/img-cart/Michael-Kors-Miranda-Large-Tote-4.png" alt="foto">
-                                        <img class="product-items__img second" src="img/img-cart/Michael-Kors-Miranda-Large-Tote-5.png" alt="foto">
+                                        <img class="product-items__img first" src="img/img-cart/Michael-Kors-Miranda-Large-Tote-4.jpg" alt="foto">
+                                        <img class="product-items__img second" src="img/img-cart/Michael-Kors-Miranda-Large-Tote-5.jpg" alt="foto">
                                         <div class="social-box">
                                             <ul class="social-list">
                                                 <li class="social__item">
@@ -624,8 +637,8 @@
                                         <div class="product-items__header">
                                           <span class="product-items__new">new</span>
                                         </div>
-                                        <img class="product-items__img first" src="img/img-cart/product-5.png" alt="foto">
-                                        <img class="product-items__img second" src="img/img-cart/product-6.png" alt="foto">
+                                        <img class="product-items__img first" src="img/img-cart/product-1.jpg" alt="foto">
+                                        <img class="product-items__img second" src="img/img-cart/product-2.jpg" alt="foto">
                                         <div class="social-box">
                                             <ul class="social-list">
                                                 <li class="social__item">
@@ -681,7 +694,11 @@
                 </section>
                 <section class="section-banner">
                     <div class="banner-items">
-                        <img src="img/omega_chasy_naruchnye_brend_74133_1920x1080.jpg" alt="">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="img/mobile/omega_chasy_naruchnye_brend_74133_800x450.jpg">
+                            <source media="(max-width: 992px)" srcset="img/tablet/omega_chasy_naruchnye_brend_74133_1200x800.jpg">
+                            <img src="img/omega_chasy_naruchnye_brend_74133_1920x1080.jpg" alt="naruchnye_chasy">
+                        </picture>      
                         <div class="slider-top__content">
                             <h2 class="slider-top__title slider-top__title--banner">Upto 50% <span>Offer!</span></h2>
                             <h3 class="slider-top__subtitle slider-top__subtitle--banner">For all Men’s Collections</h3>
@@ -689,7 +706,11 @@
                         </div>
                     </div>
                     <div class="banner-items">
-                        <img src="img/omega_omega_spidmester_avtomaticheskiy_hronometr_naruchnye_chasy_60326_1920x1080.jpg" alt="">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="img/mobile/omega_omega_spidmester_avtomaticheskiy_hronometr_naruchnye_chasy_60326_800x450.jpg">
+                            <source media="(max-width: 992px)" srcset="img/tablet/omega_omega_spidmester_avtomaticheskiy_hronometr_naruchnye_chasy_60326_1200x800.jpg">
+                            <img src="img/omega_omega_spidmester_avtomaticheskiy_hronometr_naruchnye_chasy_60326_1920x1080.jpg" alt="naruchnye_chasy">
+                        </picture>         
                         <div class="slider-top__content">
                             <h2 class="slider-top__title slider-top__title--banner">Upto 50% <span>Offer!</span></h2>
                             <h3 class="slider-top__subtitle slider-top__subtitle--banner">For all Men’s Collections</h3>
@@ -715,8 +736,8 @@
                                                   <span class="product-items__new">new</span>
                                                    <span class="product-items__sale">sale</span>
                                                 </div>
-                                                <img class="product-items__img first" src="img/img-cart/Armand-de-Brignac-Brut-Gold-1.5L-Magnum-3.png" alt="foto">
-                                                <img class="product-items__img second" src="img/img-cart/Armand-de-Brignac-Brut-Gold-1.5L-Magnum-4.png" alt="foto">
+                                                <img class="product-items__img first" src="img/img-cart/Armand-de-Brignac-Brut-Gold-1.5L-Magnum-3.jpg" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/Armand-de-Brignac-Brut-Gold-1.5L-Magnum-4.jpg" alt="foto">
                                                 <div class="social-box">
                                                     <ul class="social-list">
                                                         <li class="social__item">
@@ -773,8 +794,8 @@
                                                 <div class="product-items__header">
                                                   <span class="product-items__sale">sale</span>
                                                 </div>
-                                                <img class="product-items__img first" src="img/img-cart/Armand-de-Brignac-Brut-Gold-1.5L-Magnum.png" alt="foto">
-                                                <img class="product-items__img second" src="img/img-cart/Armand-de-Brignac-Brut-Gold-1.5L-Magnum2.png" alt="foto">
+                                                <img class="product-items__img first" src="img/img-cart/Armand-de-Brignac-Brut-Gold-1.5L-Magnum.jpg" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/Armand-de-Brignac-Brut-Gold-1.5L-Magnum2.jpg" alt="foto">
                                                 <div class="social-box">
                                                     <ul class="social-list">
                                                         <li class="social__item">
@@ -830,8 +851,8 @@
                                                 <div class="product-items__header">
                                                   <span class="product-items__new">new</span>
                                                 </div>
-                                                <img class="product-items__img first" src="img/img-cart/CHECK-SHIRT-WITH-POCKET-3.png" alt="foto">
-                                                <img class="product-items__img second" src="img/img-cart/CHECK-SHIRT-WITH-POCKET-4.png" alt="foto">
+                                                <img class="product-items__img first" src="img/img-cart/CHECK-SHIRT-WITH-POCKET-3.jpg" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/CHECK-SHIRT-WITH-POCKET-4.jpg" alt="foto">
                                                 <div class="social-box">
                                                     <ul class="social-list">
                                                         <li class="social__item">
@@ -893,8 +914,8 @@
                                                   <span class="product-items__new">new</span>
                                                    <span class="product-items__sale">sale</span>
                                                 </div>
-                                                <img class="product-items__img first" src="img/img-cart/Chivas-Regal-1.png" alt="foto">
-                                                <img class="product-items__img second" src="img/img-cart/Chivas-Regal-2.png" alt="foto">
+                                                <img class="product-items__img first" src="img/img-cart/Chivas-Regal-1.jpg" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/Chivas-Regal-2.jpg" alt="foto">
                                                 <div class="social-box">
                                                     <ul class="social-list">
                                                         <li class="social__item">
@@ -951,8 +972,8 @@
                                                 <div class="product-items__header">
                                                   <span class="product-items__sale">sale</span>
                                                 </div>
-                                                <img class="product-items__img first" src="img/img-cart/Chivas-Regal-4.png" alt="foto">
-                                                <img class="product-items__img second" src="img/img-cart/Chivas-Regal-3.png" alt="foto">
+                                                <img class="product-items__img first" src="img/img-cart/Chivas-Regal-4.jpg" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/Chivas-Regal-3.jpg" alt="foto">
                                                 <div class="social-box">
                                                     <ul class="social-list">
                                                         <li class="social__item">
@@ -1008,8 +1029,8 @@
                                                 <div class="product-items__header">
                                                   <span class="product-items__new">new</span>
                                                 </div>
-                                                <img class="product-items__img first" src="img/img-cart/Giuseppe-Zanotti-1111-1.png" alt="foto">
-                                                <img class="product-items__img second" src="img/img-cart/Giuseppe-Zanotti-1111-2.png" alt="foto">
+                                                <img class="product-items__img first" src="img/img-cart/Giuseppe-Zanotti-1111-1.jpg" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/Giuseppe-Zanotti-1111-2.jpg" alt="foto">
                                                 <div class="social-box">
                                                     <ul class="social-list">
                                                         <li class="social__item">
@@ -1071,8 +1092,8 @@
                                                   <span class="product-items__new">new</span>
                                                    <span class="product-items__sale">sale</span>
                                                 </div>
-                                                <img class="product-items__img first" src="img/img-cart/Frye-Dorado.png" alt="foto">
-                                                <img class="product-items__img second" src="img/img-cart/Frye-Dorado2.png" alt="foto">
+                                                <img class="product-items__img first" src="img/img-cart/Frye-Dorado.jpg" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/Frye-Dorado2.jpg" alt="foto">
                                                 <div class="social-box">
                                                     <ul class="social-list">
                                                         <li class="social__item">
@@ -1129,8 +1150,8 @@
                                                 <div class="product-items__header">
                                                   <span class="product-items__sale">sale</span>
                                                 </div>
-                                                <img class="product-items__img first" src="img/img-cart/Giuseppe-Zanotti-E56080-1.png" alt="foto">
-                                                <img class="product-items__img second" src="img/img-cart/Giuseppe-Zanotti-E56080-2.png" alt="foto">
+                                                <img class="product-items__img first" src="img/img-cart/Giuseppe-Zanotti-E56080-1.jpg" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/Giuseppe-Zanotti-E56080-2.jpg" alt="foto">
                                                 <div class="social-box">
                                                     <ul class="social-list">
                                                         <li class="social__item">
@@ -1186,8 +1207,8 @@
                                                 <div class="product-items__header">
                                                   <span class="product-items__new">new</span>
                                                 </div>
-                                                <img class="product-items__img first" src="img/img-cart/Giuseppe-Zanotti-E56080-3.png" alt="foto">
-                                                <img class="product-items__img second" src="img/img-cart/Giuseppe-Zanotti-E56080-4.png" alt="foto">
+                                                <img class="product-items__img first" src="img/img-cart/Giuseppe-Zanotti-E56080-3.jpg" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/Giuseppe-Zanotti-E56080-4.jpg" alt="foto">
                                                 <div class="social-box">
                                                     <ul class="social-list">
                                                         <li class="social__item">
@@ -1262,8 +1283,8 @@
                                           <span class="product-items__new2">new</span>
                                            <span class="product-items__sale2">sale</span>
                                         </div>
-                                        <img class="product-items__img first" src="img/img-cart/Golden-State-Fruit-California-Fruit-Gift-Box_5.png" alt="foto">
-                                        <img class="product-items__img second" src="img/img-cart/Golden-State-Fruit-California-Fruit-Gift-Box_6.png" alt="foto">
+                                        <img class="product-items__img first" src="img/img-cart/Golden-State-Fruit-California-Fruit-Gift-Box_5.jpg" alt="foto">
+                                        <img class="product-items__img second" src="img/img-cart/Golden-State-Fruit-California-Fruit-Gift-Box_6.jpg" alt="foto">
                                         <div class="social-box">
                                             <ul class="social-list">
                                                 <li class="social__item">
@@ -1317,8 +1338,8 @@
                                         <div class="product-items__header">
                                           <span class="product-items__sale">sale</span>
                                         </div>
-                                        <img class="product-items__img first" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_1.png" alt="foto">
-                                        <img class="product-items__img second" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_4.png" alt="foto">
+                                        <img class="product-items__img first" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_1.jpg" alt="foto">
+                                        <img class="product-items__img second" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_4.jpg" alt="foto">
                                         <div class="social-box">
                                             <ul class="social-list">
                                                 <li class="social__item">
@@ -1372,8 +1393,8 @@
                                         <div class="product-items__header">
                                           <span class="product-items__new">new</span>
                                         </div>
-                                        <img class="product-items__img first" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_5.png" alt="foto">
-                                        <img class="product-items__img second" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_6.png" alt="foto">
+                                        <img class="product-items__img first" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_5.jpg" alt="foto">
+                                        <img class="product-items__img second" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_6.jpg" alt="foto">
                                         <div class="social-box">
                                             <ul class="social-list">
                                                 <li class="social__item">
@@ -1427,8 +1448,8 @@
                                         <div class="product-items__header">
                                           <span class="product-items__sale">sale</span>
                                         </div>
-                                        <img class="product-items__img first" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_1.png" alt="foto">
-                                        <img class="product-items__img second" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_4.png" alt="foto">
+                                        <img class="product-items__img first" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_1.jpg" alt="foto">
+                                        <img class="product-items__img second" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_4.jpg" alt="foto">
                                         <div class="social-box">
                                             <ul class="social-list">
                                                 <li class="social__item">
@@ -1486,7 +1507,11 @@
                 </section>
                 <section class="section-banner section-banner--full">
                     <div class="banner-items banner-items--full">
-                        <img src="img/lyubov_chashka_serdce_kofe_kapuchino_84952_1920x1080.jpg" alt="">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="img/mobile/lyubov_chashka_serdce_kofe_kapuchino_84952_800x450.jpg">
+                            <source media="(max-width: 992px)" srcset="img/tablet/lyubov_chashka_serdce_kofe_kapuchino_84952_1200x800.jpg">
+                            <img src="img/lyubov_chashka_serdce_kofe_kapuchino_84952_1920x1080.jpg" alt="lyubov_chashka">
+                        </picture>
                         <div class="slider-top__content">
                             <h2 class="slider-top__title slider-top__title--banner">Upto 50% <span>Offer!</span></h2>
                             <h3 class="slider-top__subtitle slider-top__subtitle--banner">For all Men’s Collections</h3>
@@ -1509,8 +1534,8 @@
                                           <span class="product-items__new">new</span>
                                            <span class="product-items__sale">sale</span>
                                         </div>
-                                        <img class="product-items__img first" src="img/img-cart/MEKU-Handmade.png" alt="foto">
-                                        <img class="product-items__img second" src="img/img-cart/MEKU-Handmade2.png" alt="foto">
+                                        <img class="product-items__img first" src="img/img-cart/MEKU-Handmade.jpg" alt="foto">
+                                        <img class="product-items__img second" src="img/img-cart/MEKU-Handmade2.jpg" alt="foto">
                                         <div class="social-box">
                                             <ul class="social-list">
                                                 <li class="social__item">
@@ -1564,8 +1589,8 @@
                                         <div class="product-items__header">
                                           <span class="product-items__sale">sale</span>
                                         </div>
-                                        <img class="product-items__img first" src="img/img-cart/Lorex-LW1744B-Wireless-Video-Surveillance-System-Series-with-7-Inch-LCD-Monitor-and-4-Camera-(Black)_4.png" alt="foto">
-                                        <img class="product-items__img second" src="img/img-cart/Lorex-LW1744B-Wireless-Video-Surveillance-System-Series-with-7-Inch-LCD-Monitor-and-4-Camera-(Black)_5.png" alt="foto">
+                                        <img class="product-items__img first" src="img/img-cart/Lorex-LW1744B-Wireless-Video-Surveillance-System-Series-with-7-Inch-LCD-Monitor-and-4-Camera-(Black)_4.jpg" alt="foto">
+                                        <img class="product-items__img second" src="img/img-cart/Lorex-LW1744B-Wireless-Video-Surveillance-System-Series-with-7-Inch-LCD-Monitor-and-4-Camera-(Black)_5.jpg" alt="foto">
                                         <div class="social-box">
                                             <ul class="social-list">
                                                 <li class="social__item">
@@ -1619,8 +1644,8 @@
                                         <div class="product-items__header">
                                           <span class="product-items__new">new</span>
                                         </div>
-                                        <img class="product-items__img first" src="img/img-cart/Securityman-DigiLCDDVR4-4-Channel-Wireless-Security-System,-7-Inch-LCD-SD-Recorder-with-4-Night-Vision-Wireless-Cameras-(Black)_3.png" alt="foto">
-                                        <img class="product-items__img second" src="img/img-cart/Securityman-DigiLCDDVR4-4-Channel-Wireless-Security-System,-7-Inch-LCD-SD-Recorder-with-4-Night-Vision-Wireless-Cameras-(Black)_4.png" alt="foto">
+                                        <img class="product-items__img first" src="img/img-cart/Securityman-DigiLCDDVR4-4-Channel-Wireless-Security-System,-7-Inch-LCD-SD-Recorder-with-4-Night-Vision-Wireless-Cameras-(Black)_3.jpg" alt="foto">
+                                        <img class="product-items__img second" src="img/img-cart/Securityman-DigiLCDDVR4-4-Channel-Wireless-Security-System,-7-Inch-LCD-SD-Recorder-with-4-Night-Vision-Wireless-Cameras-(Black)_4.jpg" alt="foto">
                                         <div class="social-box">
                                             <ul class="social-list">
                                                 <li class="social__item">
@@ -1674,8 +1699,8 @@
                                         <div class="product-items__header">
                                           <span class="product-items__new">new</span>
                                         </div>
-                                        <img class="product-items__img first" src="img/img-cart/JVC-KW-R910BT-Car-Audio-2DIN-CD-Stereo-w-Bluetooth-Ipod-Iphone-Android-Control_2.png" alt="foto">
-                                        <img class="product-items__img second" src="img/img-cart/JVC-KW-R910BT-Car-Audio-2DIN-CD-Stereo-w-Bluetooth-Ipod-Iphone-Android-Control_4.png" alt="foto">
+                                        <img class="product-items__img first" src="img/img-cart/JVC-KW-R910BT-Car-Audio-2DIN-CD-Stereo-w-Bluetooth-Ipod-Iphone-Android-Control_2.jpg" alt="foto">
+                                        <img class="product-items__img second" src="img/img-cart/JVC-KW-R910BT-Car-Audio-2DIN-CD-Stereo-w-Bluetooth-Ipod-Iphone-Android-Control_4.jpg" alt="foto">
                                         <div class="social-box">
                                             <ul class="social-list">
                                                 <li class="social__item">
@@ -1733,7 +1758,11 @@
         </section>
         <section class="section-banner container section-banner--full"> 
             <div class="banner-items--full banner-items--full-margin">
-                <img src="img/lakosta_lacoste_sumka_stil_model_20442_1920x1080.jpg" alt="">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="img/mobile/lakosta_lacoste_sumka_stil_model_20442_800x450.jpg">
+                    <source media="(max-width: 992px)" srcset="img/tablet/lakosta_lacoste_sumka_stil_model_20442_1200x800.jpg">
+                    <img src="img/lakosta_lacoste_sumka_stil_model_20442_1920x1080.jpg" alt="krossovki">
+                </picture>
                 <div class="slider-top__content">
                     <batton class="btn btn--slider">shop now</batton>
                     <h2 class="slider-top__title slider-top__title--banner">Upto 50% <span>Offer!</span></h2>
@@ -1845,11 +1874,11 @@
                     <li class="product-items product-bottom--items">
                         <div class="product-items__box">
                             <div class="product-items__header">
-                              <span class="product-items__new">new</span>
+                              <span class="product-items__news">new</span>
                                <span class="product-items__sale">sale</span>
                             </div>
-                            <img class="product-items__img first" src="img/img-cart/Golden-State-Fruit-California-Fruit-Gift-Box_5.png" alt="foto">
-                            <img class="product-items__img second" src="img/img-cart/Golden-State-Fruit-California-Fruit-Gift-Box_6.png" alt="foto">
+                            <img class="product-items__img first" src="img/img-cart/Golden-State-Fruit-California-Fruit-Gift-Box_5.jpg" alt="foto">
+                            <img class="product-items__img second" src="img/img-cart/Golden-State-Fruit-California-Fruit-Gift-Box_6.jpg" alt="foto">
                             <div class="social-box">
                                 <ul class="social-list">
                                     <li class="social__item">
@@ -1903,8 +1932,8 @@
                             <div class="product-items__header">
                               <span class="product-items__sale">sale</span>
                             </div>
-                            <img class="product-items__img first" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_1.png" alt="foto">
-                            <img class="product-items__img second" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_4.png" alt="foto">
+                            <img class="product-items__img first" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_1.jpg" alt="foto">
+                            <img class="product-items__img second" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_4.jpg" alt="foto">
                             <div class="social-box">
                                 <ul class="social-list">
                                     <li class="social__item">
@@ -1958,8 +1987,8 @@
                             <div class="product-items__header">
                               <span class="product-items__new">new</span>
                             </div>
-                            <img class="product-items__img first" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_5.png" alt="foto">
-                            <img class="product-items__img second" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_6.png" alt="foto">
+                            <img class="product-items__img first" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_5.jpg" alt="foto">
+                            <img class="product-items__img second" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_6.jpg" alt="foto">
                             <div class="social-box">
                                 <ul class="social-list">
                                     <li class="social__item">
@@ -2013,8 +2042,8 @@
                             <div class="product-items__header">
                               <span class="product-items__sale">sale</span>
                             </div>
-                            <img class="product-items__img first" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_1.png" alt="foto">
-                            <img class="product-items__img second" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_4.png" alt="foto">
+                            <img class="product-items__img first" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_1.jpg" alt="foto">
+                            <img class="product-items__img second" src="img/img-cart/Golden-State-Fruit-Savory-Favorites-Assorted-Nuts-Gift-Tray_4.jpg" alt="foto">
                             <div class="social-box">
                                 <ul class="social-list">
                                     <li class="social__item">
@@ -2085,56 +2114,56 @@
                     <div class="brandSlider__container">
                         <figure class="slider__brands">
                             <a href="#">
-                                <img src="img/codespot.PNG" alt="foto">
+                                <img src="img/codespot.png" alt="foto">
                             </a>
                         </figure>
                     </div>
                     <div class="brandSlider__container">
                         <figure class="slider__brands">
                             <a href="#">
-                                <img src="img/branos.PNG" alt="foto">
+                                <img src="img/branos.png" alt="foto">
                             </a>
                         </figure>
                     </div>
                     <div class="brandSlider__container">
                         <figure class="slider__brands">
                             <a href="#">
-                                <img src="img/codespot.PNG" alt="foto">
+                                <img src="img/codespot.png" alt="foto">
                             </a>
                         </figure>
                     </div>
                     <div class="brandSlider__container">
                         <figure class="slider__brands">
                             <a href="#">
-                                <img src="img/branos.PNG" alt="foto">
+                                <img src="img/branos.png" alt="foto">
                             </a>
                         </figure>
                     </div>
                     <div class="brandSlider__container">
                         <figure class="slider__brands">
                             <a href="#">
-                                <img src="img/codespot.PNG" alt="codespot">
+                                <img src="img/codespot.png" alt="codespot">
                             </a>
                         </figure>
                     </div>
                     <div class="brandSlider__container">
                         <figure class="slider__brands">
                             <a href="#">
-                                <img src="img/branos.PNG" alt="branos">
+                                <img src="img/branos.png" alt="branos">
                             </a>
                         </figure>
                     </div>
                     <div class="brandSlider__container">
                         <figure class="slider__brands">
                             <a href="#">
-                                <img src="img/codespot.PNG" alt="codespot">
+                                <img src="img/codespot.png" alt="codespot">
                             </a>
                         </figure>
                     </div>
                     <div class="brandSlider__container">
                         <figure class="slider__brands">
                             <a href="#">
-                                <img src="img/branos.PNG" alt="branos">
+                                <img src="img/branos.png" alt="branos">
                             </a>
                         </figure>
                     </div>
@@ -2154,11 +2183,6 @@
                 <div class="features__container container">
                   <div class="wrap-paire">
                     <ul class="features__list">
-    
-                    
-    
-    
-    
                       <li class="features__items">
                         <img src="img/freeshp.png" alt="" class="features__img">
                         <h3 class="features__title">FREE SHIPPING</h3>
@@ -2254,42 +2278,33 @@
                     <div class="footer__content-container container">
                         <ul class="footer__content-list">
                             <li class="footer__content-item">
-                              <address class="footer__address">
-                                <ul class="inner-list">
-                                  <li class="inner-list-item">
-                                              <span class="footer__address-title">
-                                                Supermart
+                                <address class="footer__address">
+                                    <ul class="inner-list">
+                                        <li class="inner-list-item">
+                                        <span class="footer__address-title">
+                                            Supermart
+                                        </span>
+                                        </li>                         
+                                        <li class="inner-list-item">
+                                            <span class="footer__address-content">
+                                                  Many say exploration is part of our dest but it’s actually our duty to future and their.
                                             </span>
-    
-                                          </li>                         
-    
-                                       
-    
-                                              <li class="inner-list-item">
-                                                  <span class="footer__address-content">
-                                                      Many say exploration is part of our dest but it’s actually our duty to future and their.
-                                                  </span>
-                                              </li>
-                                              <li class="inner-list-item">
-                                                  <span class="descr-title">Address:</span><span class="descr-content"> 868 Fake Street, New York</span>
-                                              </li>
-                                              <li class="inner-list-item">
-                                                  <a href="tel:080847521499" class="footer__address-content">
-                                                     <span class="descr-title"> Phone:</span> (08) 08 4752 1499
-                                                  </a>
-                                              </li>
-                                              <li class="inner-list-item">
-                                                  <a href="mailto:info@supermart.com" class="footer__address-content">
-                                                     <span class="descr-title">Email:</span> info@supermart.com
-                                                  </a>
-                                              </li>
-    
-                                              
-    
-    
-    
-                                          </ul>
-                                      </address>
+                                        </li>
+                                        <li class="inner-list-item">
+                                            <span class="descr-title">Address:</span><span class="descr-content"> 868 Fake Street, New York</span>
+                                        </li>
+                                        <li class="inner-list-item">
+                                            <a href="tel:080847521499" class="footer__address-content">
+                                                <span class="descr-title"> Phone:</span> (08) 08 4752 1499
+                                            </a>
+                                        </li>
+                                        <li class="inner-list-item">
+                                            <a href="mailto:info@supermart.com" class="footer__address-content">
+                                                <span class="descr-title">Email:</span> info@supermart.com
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </address>
                             </li>
                             <li class="footer__content-item">
                               <ul class="inner-list">
@@ -2475,6 +2490,9 @@
             </div>
         </div>
         <!-- modal window -->
+         <div class="bottom_top">
+            <a href="#" id="ui-to-top" class="ui-to-top fa fa-angle-up active"></a>
+         </div>
     <script src="js/libs.min.js"></script>
     <script src="js/main-style.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>

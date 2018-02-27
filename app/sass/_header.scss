@@ -194,7 +194,8 @@
 
 
 //////////////language menuuu/////////////
-.language-menu-list {
+.language-menu-list,
+.money-menu-list {
 	display: inline-flex;
 	flex-direction: column;
 	text-transform: uppercase;
@@ -212,10 +213,12 @@
     	top: 2px;
     }
 }
-.open.language-menu-list:after {
+.open.language-menu-list:after,
+.open.money-menu-list:after {
 	content: "\f0d8";
 }
-.language-menu__item {
+.language-menu__item,
+.money-menu__item {
 	color: #000;
 	text-align: center;
 	flex: 1;
@@ -243,15 +246,17 @@
 }
 
 
-.language-menu-list.open {
-	height: 120px;
+.language-menu-list.open,
+.money-menu-list.open {
+	height: auto;
 	border-radius: 0 0 5px 5px;
 	position: absolute;
 	overflow-y: auto;
 	background: #fff;
 }
 
-.language-menu__item.active {
+.language-menu__item.active,
+.money-menu__item.active {
 	order: 1;
 	color: #fff;
 	background: #3b83d4;
@@ -263,94 +268,7 @@
 
 
 
-///////////////menu .currensy//////////////
-.currensy,
-.currensy-lanuage {
-	width: 100px;
-	position: absolute;
-	right: 0;
-	height: 30px;
-	border-radius: 3px;
-	background-color: transparent;
-	color: $color-white;
-	cursor: pointer;
-	overflow: hidden;
-	transition: .3s;
-	vertical-align: center;
-	z-index:10;
-}
 
-.currensy-tag,
-.currensy-tag-lanuage {
-	@include title-p();
-	text-transform: uppercase;
-	padding:5px 10px;
-	cursor: pointer;
-	transition: .2s;
-	height: 30px;
-	color: $color-white;
-	display: flex;
-	align-items: center;
-	i {
-		margin-left: 3px;
-	}
-}
-
-.currensy__icon,
-.currensy__icon-lanuage{
-	position: absolute;
-	right: 10px;
-	top: 0;
-	font-size: 15px;
-	padding:5px 0;
-	margin: 0 5px;
-	color: #fff;
-}
-::-webkit-scrollbar {
-	background: transparent;
-	width: 0.5em;
-	position: absolute;
-}
-::-webkit-scrollbar-track {
-	background: transparent;
-	position: absolute;
-	z-index: -2;
-}
-::-webkit-scrollbar-thumb {
-	border-radius: 100px;
-	background: $color-yellow;
-}
-
-.currensy-list,
-.currensy-list-lanuage {
- background: $color-white;
- transition: .3s;
- width: 100%;
- height: 100%;
- overflow-y: auto;
- overflow-x: hidden !important;
- position: absolute;
- display: block;
-}
-.option,
-.option-lanuage {
-	display: block;
-	padding: 5px 0 5px 10px;
-	cursor: pointer;
-	color: $color-black;
-	@include title-p();
-	text-transform: uppercase;
-	display: flex;
-	align-items: center;
-}
-
-.option:hover,
-.option-lanuage:hover  {
-	color: $color-white;
-	background: $color-yellow;
-	transition: .2s;
-}
-///////////////menu .currensy//////////////
 
 ////////////button- top header///////////
 .btn-top {

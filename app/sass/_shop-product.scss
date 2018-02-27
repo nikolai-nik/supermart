@@ -112,6 +112,7 @@
 	justify-content: center;
 	align-items: center;
 	transition: background .3s ease;
+	cursor: pointer;
 	&:hover {
 		background: $color-yellow;
 	}
@@ -120,9 +121,12 @@
 	}
 }
 .cart-full-icons__link{
-	font-size: 15px;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 15px;
 	color: #222222;
 	transition: color .3s ease;
+	padding: auto;
 }
 .cart-full-icons__item:hover .cart-full-icons__link {
 	color: #fff;
@@ -157,7 +161,7 @@
 	
 }
 .social-share__item {
-	padding: 5px 15px;
+	
 	margin:0 0 10px 20px;
 	border: 1px solid #777;
 	border-radius: 2px;
@@ -200,7 +204,9 @@
 .social-share__link {
 	font-family: 'robotolight';
 	font-size: 12px;
+	line-height: 14px;
 	text-decoration: none;
+	padding: 5px 15px;
 }
 .social-share__link i {
 	margin-right: 5px;

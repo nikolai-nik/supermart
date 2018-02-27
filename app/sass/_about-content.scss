@@ -295,11 +295,14 @@
   object-fit: contain;
 
 }
-
+.team__img {
+  overflow: hidden;
+}
 .team__img--descr{
   display: block;
   text-align: center;
   margin-top: 28px;
+
 }
 
 .team__person{

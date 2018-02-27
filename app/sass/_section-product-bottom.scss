@@ -10,13 +10,13 @@
 		@include size-md(8);
 		@include size-sm(12);
 		@include row-flex();
-		border: 1px solid #777;
 		.product-bottom--items {
-			@include col();
-			@include size(3);
-			@include size-lg(6);
-			@include size-xs(12);
+			width: 50%;
+			@include xs-block() {
+				width: 100%;
+			}	
 
+			border: 1px solid #777;
 			.caption {
 				text-align: center;
 			}

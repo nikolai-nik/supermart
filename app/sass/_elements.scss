@@ -85,3 +85,30 @@
 	font-size: 14px;
 	
 }
+.bottom_top {
+	.ui-to-top {
+		width: 50px;
+		height: 50px;
+		text-decoration: none;
+		font-size: 24px;
+		line-height: 45px;
+		background: $color-blue;
+		color: $color-white;
+		position: fixed;
+		right: 10%;
+		bottom: 65px;
+		overflow: hidden;
+		text-align: center;
+		list-style: none;
+		z-index: 20;
+		border: 1px solid #c3e1bd;
+	}
+	.ui-to-top:hover {
+		color: #c3e1bd;
+	}
+	.ui-to-top:active {
+	 	background: $color-black;
+	 	color: $color-white;
+
+	}
+}
