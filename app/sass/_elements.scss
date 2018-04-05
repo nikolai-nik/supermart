@@ -4,7 +4,48 @@
 	text-transform: uppercase;
 	cursor: pointer;
 }
-/* **************raiting-list */
+/////**************raiting-list//////
+
+.rating {
+	display: flex;
+    justify-content: center;
+    flex-flow: row-reverse;
+}
+
+.rating--left {
+	justify-content: flex-end;
+}
+.rating input {
+    position: absolute;
+    left: -999999px;
+}
+
+.rating label {
+	cursor: pointer;
+    display: inline-block;
+    font-size: 0;
+}
+
+.rating > label:before {
+    position: relative;
+    font: 12px/1 FontAwesome;
+    display: block;
+    content: "\f005";
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > label.selected:before,
+.rating > label.selected ~ label:before {
+    color: #ffd200;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+
 .card__rating {
 	display: flex;
 	justify-content: center;
@@ -95,7 +136,7 @@
 		background: $color-blue;
 		color: $color-white;
 		position: fixed;
-		right: 10%;
+		// right: 10%;
 		bottom: 65px;
 		overflow: hidden;
 		text-align: center;

@@ -203,8 +203,34 @@
 			prevEl: '.swiper-button-prev-categoru',
 			},
 		});
-		///////////////
 
+		///////////////
+		var swiperStockProduct = new Swiper('.swiper-stock-product', {
+			slidesPerView: 4,
+			breakpoints: {
+				993: {
+					slidesPerView: 4
+				},
+				769: {
+					slidesPerView: 4
+				},
+				577: {
+					slidesPerView:4
+				}
+			},
+			spaceBetween: 0,
+			slidesPerGroup: 1,
+			loop: true,
+			loopFillGroupWithBlank: true,
+			pagination: {
+			
+			clickable: true,
+			},
+			navigation: {
+			nextEl: '.swiper-button-next-categoru',
+			prevEl: '.swiper-button-prev-categoru',
+			},
+		});
 		/////////////slider pgwslideshow/////
 		
 		$('.pgwSlideshow').pgwSlideshow({
@@ -259,22 +285,50 @@
    		
         
 		///////// knopka button -top
+		let cont = $('.container');
+		let coordUi = cont.width() + cont.offset().left;
+		let UiTiTop = $('.ui-to-top');
+		// UiTiTop.offset(function(i,val){
+		//   return {top:val.top, left:val.left + coordUi - UiTiTop.width() + 15};
+		// });
 		$(window).scroll(function(){
 			if ($(this).scrollTop() > 100) {
-				$('.ui-to-top').fadeIn();
+				UiTiTop.fadeIn();
 			} 
 			else {
-				$('.ui-to-top').fadeOut();
+				UiTiTop.fadeOut();
 			}
 		});
 			 
-		$('.ui-to-top').click(function(){
+		UiTiTop.click(function(){
 			$("html, body").animate({ scrollTop: 0 }, 600);
 			return false;
 		});
-		////////////    
+		UiTiTop.css({
+			"left": (coordUi - UiTiTop.width() + 13)
+		});
+		
+		
+		
+		////////////  
 
-		/////////////slider pgwslideshow/////
+		/////////галерея мини 
+		$('#thumbs img').click(function(){
+		    $('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
+		});
+		
+		////////////
+
+		///////rating//////////////
+ 	 	$('.rating input').change(function () {
+		  var $radio = $(this);
+		  $('.rating .selected').removeClass('selected');
+		  $radio.closest('label').addClass('selected');
+		///////rating//////////////
+
+		});
+		 
+		
 	});// end ready
 
 })( jQuery );

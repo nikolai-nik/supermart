@@ -53,7 +53,7 @@ gulp.task('scripts', function() {
         'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js', // Берем Magnific Popup
         'app/libs/swiper/dist/js/swiper.min.js',
          'app/libs/PgwSlideshow/pgwslideshow.min.js',////slider slideshow//
-        'app/libs/owl-slider/owl.carousel.js'////owl-slider//   
+        'app/libs/owl-slider/owl.carousel.js'///owl-slider// 
         ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл

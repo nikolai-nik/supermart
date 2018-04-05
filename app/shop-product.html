@@ -12,7 +12,7 @@
       <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-     <header class="header">
+    <header class="header">
             <div class="header-wrap header-wrap--top">
                 <div class="container top-panel">
                     <div class="top-navigation top-navigation-left">
@@ -222,7 +222,7 @@
                 </div>
             </div>
     
-        </header>
+    </header>
     <main class="main main-stock-product">
         <div class="container breadgrumbs--wrap">
             <div class="breadgrumbs">
@@ -239,42 +239,43 @@
         <section class="section section-stock-product container">
            <div class="cart-full-product">
                <div class="cart-full-content">
-                   <div class="cart-full-wrap">
-                       <ul class="pgwSlideshow">
-                         
-                           <li class="pgwSlideshow__item"><img src="img/img-cart/lakosta_lacoste_brend_chasy_naruchnye_stilnye_cifry_ciferblat_20346_800x1280.jpg" alt=""></li>
-                           <li class="pgwSlideshow__item"><img src="img/img-cart/lakosta_lacoste_brend_chasy_naruchnye_stilnye_krokodil_20345_800x1280.jpg" alt=""></li>
-                           <li class="pgwSlideshow__item">
-                               <a href="#" target="_blank">
-                                   <img src="img/img-cart/lakosta_lacoste_brend_chasy_zhenskie_krasivye_naruchnye_stilnye_remeshok_ciferblat_20347_800x1280.jpg" alt="">
-                               </a>
-                           </li>
-                       </ul> 
+                    <div class="cart-full-wrap cart-full-wrap--gallery">
+                       <div id="gallery">
+                            <div id="panel">
+                                <img id="largeImage" src="img/omega_chasy_naruchnye_stil_remeshok_ciferblat_38240_800x1280.jpg" />
+                            </div>
+                            <div id="thumbs">
+                                <img src="img/img-cart/lakosta_lacoste_brend_chasy_naruchnye_stilnye_krokodil_20345_800x1280.jpg" alt="1st image description" />
+                                <img src="img/img-cart/lakosta_lacoste_brend_chasy_zhenskie_krasivye_naruchnye_stilnye_remeshok_ciferblat_20347_800x1280.jpg" alt="2nd image description" />
+                                <img src="img/img-cart/lakosta_lacoste_brend_chasy_naruchnye_stilnye_cifry_ciferblat_20346_800x1280.jpg" alt="3rd image descriptionn" />
+                                <img src="img/omega_chasy_naruchnye_stil_remeshok_ciferblat_38240_800x1280.jpg" alt="4th image description" />
+                            </div>
+                        </div>
+                        
                    </div>
                    <div class="cart-full-wrap">
                        <div class="cart-full-info">
                            <h2 class="cart-full__title">vistalia pure honey</h2>
                            <div class="cart-full__rating"></div>
                            <div class="cart-full__price">$18.00</div>
-                           <div class="card__rating card__rating--left">
-                                <ul class="rating-list">
-                                    <li class="rating-list__item active">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </li>
-                                     <li class="rating-list__item active">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </li>
-                                     <li class="rating-list__item active">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </li>
-                                     <li class="rating-list__item ">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </li>
-                                     <li class="rating-list__item ">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </li>
-                                </ul>
-                            </div>
+                           
+                            <div class="rating rating--left">
+                                  <label>
+                                    <input type="radio" name="rating" value="5" title="5 stars"> 5
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="rating" value="4" title="4 stars"> 4
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="rating" value="3" title="3 stars"> 3
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="rating" value="2" title="2 stars"> 2
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="rating" value="1" title="1 star"> 1
+                                  </label>
+                                </div>
                            <p class="cart-full__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint itaque, repellat. Optio recusandae, repellendus ut qui sapiente veniam quam, commodi a. Modi repellendus illo autem molestias recusandae, fugit dicta a.</p>
                            <ul class="stock-list">
                                <li class="stock__item"><a href="#" class="stock__link active">Out of Stock</a></li>
@@ -683,8 +684,9 @@
     <div class="bottom_top">
         <a href="#" id="ui-to-top" class="ui-to-top fa fa-angle-up active"></a>
     </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main-style.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
+    
 </body>
 </html>
